@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="payroll-system-payslips;generate-payslip-for-a-new-employee" tests="2" failures="1" skipped="0">
+        <properties>
+            <property name="URI" value="C:/Users/Rida/Desktop/MYOB/shiny-people/MYOB-Technology-shiny-people-8ab2c6ff65735d776916bc338b4432a10d683971/payroll/app/test/features/payslip.feature">
+            </property>
+        </properties>
+        <testcase name="When I generate a payslip for a new employee" classname="payroll-system-payslips;generate-payslip-for-a-new-employee" time="6.360397618">
+        </testcase>
+        <testcase name="Then I should see the payslip summary page" classname="payroll-system-payslips;generate-payslip-for-a-new-employee" time="0.258128737">
+            <failure message="AssertionError: expected &apos;$614.00&apos; to deeply equal &apos;$6141.00&apos;">AssertionError: expected &apos;$614.00&apos; to deeply equal &apos;$6141.00&apos;
+    at page.payslip.getEmployeeSuper.then.t (C:\Users\Rida\Desktop\MYOB\shiny-people\MYOB-Technology-shiny-people-8ab2c6ff65735d776916bc338b4432a10d683971\payroll\app\test\step_definitions\payslip_steps.js:32:41)
+    at ManagedPromise.invokeCallback_ (C:\Users\Rida\Desktop\MYOB\shiny-people\MYOB-Technology-shiny-people-8ab2c6ff65735d776916bc338b4432a10d683971\payroll\app\node_modules\selenium-webdriver\lib\promise.js:1341:14)
+    at TaskQueue.execute_ (C:\Users\Rida\Desktop\MYOB\shiny-people\MYOB-Technology-shiny-people-8ab2c6ff65735d776916bc338b4432a10d683971\payroll\app\node_modules\selenium-webdriver\lib\promise.js:2950:14)
+    at TaskQueue.executeNext_ (C:\Users\Rida\Desktop\MYOB\shiny-people\MYOB-Technology-shiny-people-8ab2c6ff65735d776916bc338b4432a10d683971\payroll\app\node_modules\selenium-webdriver\lib\promise.js:2933:27)
+    at asyncRun (C:\Users\Rida\Desktop\MYOB\shiny-people\MYOB-Technology-shiny-people-8ab2c6ff65735d776916bc338b4432a10d683971\payroll\app\node_modules\selenium-webdriver\lib\promise.js:2793:27)
+    at C:\Users\Rida\Desktop\MYOB\shiny-people\MYOB-Technology-shiny-people-8ab2c6ff65735d776916bc338b4432a10d683971\payroll\app\node_modules\selenium-webdriver\lib\promise.js:675:7
+    at process._tickCallback (internal/process/next_tick.js:68:7)</failure>
+        </testcase>
+    </testsuite>
+</testsuites>

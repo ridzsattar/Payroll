@@ -35,48 +35,23 @@ module.exports = function () {
     });
 
 
-    
 
 
-/*
-    this.Then(/^I should see the payslip summary page$/, function () {
-        return driver.wait(until.elementsLocated(page.payslip.elements.payslipForm), 10000)
-            .then( () => {
-                driver.findElement(page.payslip.elements.employeeName).getText()
-                .then(t => {
-                    expect(t).to.be.eql("John Snow");
-                })
-            })
-         /*   .then( () => {
-                driver.findElement(page.payslip.elements.annualIncome).getText()
-                    .then(t => {
-                        expect(t).to.be.eql("$81,900.00");
-                })
-            })
-            .then( () => {
-                driver.findElement(page.payslip.elements.super).getText()
-                    .then(t => {
-                        expect(t).to.be.eql("$614.00");
-                })
-            });
-    }); */
-/*Rida work
+
+
+
 
     this.Then(/^I click on Pay button$/, function () {
         return driver.wait(until.elementsLocated(page.payslip.elements.payslipForm), 10000)
             .then( () => {
-                driver.findElement(page.payslip).getText()
-                .then(t => {
-                    expect(t).to.be.eql("John Snow");
-                })
+                page.payslip.clickOnPayButton();
+              //  .then(t => {
+               //     expect(t).to.be.eql("John Snow");
+                //})
             });
            
     });
 
-  //  And When I click on Pay button
-   // Then I should verify record in payments section
 
-
-*/
 
 }; 

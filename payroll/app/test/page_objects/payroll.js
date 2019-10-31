@@ -6,7 +6,10 @@ module.exports = {
         lastNameInput: by.name('lastName'),
         annualSalaryInput: by.name('annualSalary'),
         superRateInput: by.name('superRate'),
-        generatePayslipButton: by.css('button.btn-primary')
+        generatePayslipButton: by.css('button.btn-primary'),
+        paymentsGrid: by.xpath("//div[@class='payment-list well']"),
+        paymentsGridEmployeeNameList: by.css('div.col-md-3')
+        
     },
 
 
@@ -17,5 +20,11 @@ module.exports = {
         driver.findElement(this.elements.annualSalaryInput).sendKeys(annualSalary);
         driver.findElement(this.elements.superRateInput).sendKeys(superRate);
         driver.findElement(this.elements.generatePayslipButton).click();
-    }
+    },
+
+
+
+
+
+
 };

@@ -7,6 +7,13 @@ Feature: Payroll System Payslips
     Then I should see the payslip summary page
 
 
+  Scenario: Pay salary successfully from payslip summary page
+    When I generate a payslip for a new employee
+    Then I should see the payslip summary page
+    Then I click on Pay button
+    
+
+
 
 
  

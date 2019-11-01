@@ -1,3 +1,12 @@
+//function to calculate random unique string
+
+
+
+
+
+
+
+
 module.exports = {
     url: 'http://localhost:3000',
     elements: {
@@ -12,6 +21,11 @@ module.exports = {
         
     },
 
+       generateUniqueName: function () {
+        uName =  Math.random().toString(36).substr(2, 9);
+        uName = uName.charAt(0).toUpperCase() + uName.slice(1);
+        return uName;
+    },
 
     enterNewEmployeeDetails: function (firstName, lastName, annualSalary, superRate) {
         driver.wait(until.elementsLocated(this.elements.employeeForm), 10000)
